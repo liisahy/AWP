@@ -5,7 +5,7 @@
     $user = ''; // your username
     $pass = ''; // your database password
     
-    try {
+  try {
             $DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
             $DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
             $DBH->query("SET NAMES 'UTF8';");
@@ -31,6 +31,14 @@ try {
 ?>
 </div>
 <script>
+
 // TODO: use jQuery UI to make an accordion from <div id="accordion">. 
 // Set 'collapsible' property to 'true' and 'active' property to 'none'
+$('#accordion').accordion({
+	collapsible:true,
+	active:'none'
+})
+
+
+
 </script>
